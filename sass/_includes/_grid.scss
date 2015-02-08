@@ -1,0 +1,30 @@
+//basic grid layout
+.row {
+	width: 100%;
+	@media screen and (min-width: #{$row-break}) {
+		margin : 0px -15px;
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+	}
+}
+
+.row__col {
+	@media screen and (min-width: #{$row-break}) {
+		float : left;
+		padding : 0px 15px;
+
+		&.row__col50 {
+			width : 50%;
+		}
+
+		&.row__col50--offset {
+			margin-left : 50%;
+		}
+
+	}
+}

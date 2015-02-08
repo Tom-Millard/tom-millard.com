@@ -1,0 +1,47 @@
+/*
+          <a href="" class="btn btn--roller">
+            <div class="roller">
+              <i class="fa fa-lg fa-github"></i>
+              <i class="fa fa-lg fa-github"></i>
+            </div>
+          </a>
+*/
+
+$btnRoller-default-height : 41px;
+
+.btn--roller {
+  padding : 0px;
+  display : inline-block;
+  text-decoration : none;
+  overflow : hidden;
+  height : #{$btnRoller-default-height}; //override this in the html
+  position : relative;
+  vertical-align: bottom;
+
+  .rollItem {
+    display : block;
+    padding : 0.5em;
+
+    &.text {
+      line-height: 1.3em;
+    }
+
+  }
+
+  .roller {
+    @include transition(bottom, 0.3s);
+    position : relative;
+    bottom : 108%; //not sure why this is 108
+    left : 0px;
+  }
+
+}
+
+.js-not-touch {
+
+  .btn--roller:hover .roller {
+    bottom : 0%;
+  }
+
+}
+

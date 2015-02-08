@@ -1,0 +1,69 @@
+html, body { height : 100%;} .full {min-height : 100%;}
+
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.btn {
+	border : 0;
+	font-size : 1.2em;
+	background-color : #F3F3F3;
+	padding : 0.5em 0.7em;
+	display : inline-block;
+}
+
+.btn--highlight, .btn--highlight side {
+	background-color : #{$red} !important;
+	color : #fff;
+}
+
+.btn__spacing {
+	margin : 2.0em 0em 0.75em;
+}
+
+.btn__lrg {
+	font-size : 1.4em;
+}
+
+.inline-list {
+	list-style-type: none;
+}
+
+.inline-list li {
+	display: inline;
+}
+
+.dark--bg {
+	background-color : #{$dark-t};
+}
+
+.dark {
+	color : #{$dark-t};
+}
+
+.display--block {
+	display : block;
+}
+
+.bg--xmas {
+	background-image : url('/styles/images/xmas-pattern.png');
+	background-position : top left;
+}
+
+.respond-image {
+	max-width : 100%;
+}
+
+.underline {
+	text-decoration : underline;
+}
+
+//specific
+.me-block {
+	display : none;
+
+	@media (min-width: #{$row-break}) {
+		display : inline;
+	}
+
+}

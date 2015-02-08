@@ -1,0 +1,182 @@
+.container {
+	position : relative;
+	z-index : 20;
+
+	width : auto;
+	margin : 0 auto;
+	text-align : center;
+
+	@media (min-width: 750px) {
+		width : 750px;
+	}
+}
+
+.container--intro {
+	text-align : center;
+
+	@media (min-width: #{$row-break}) {
+		text-align : right;
+	}
+
+}
+
+.cover {
+	position : absolute;
+	top : 0px;
+	bottom : 0px;
+	width : 100%;
+	background-color : rgba(255, 255, 255, 0.4);
+
+	@media (min-width: #{$row-break}) {
+		display : none;
+	}
+}
+
+.full {
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(center);
+
+	position : relative;
+
+	background-image : url("/images/me--head.png");
+	background-size : cover;
+	background-position : center center;
+	background-repeat : no-repeat;
+
+	@media (min-width: #{$row-break}) {
+		background-image : none;
+	}
+
+	//margin : 0em 1em;
+	@media (min-width: 750px) {
+		margin : 0em;
+	}
+
+	//off center
+	.container {
+		padding: 0 1em;
+		@media (min-width: #{$row-break}) {
+			padding : 0px;
+			background: none;
+		}
+	}
+}
+
+.block {
+	padding : 1.5em 1em;
+
+	background-size : cover;
+	background-position : center center;
+	background-repeat : no-repeat;
+
+	@media (min-width: 750px) {
+		padding : 0em 0em 4em;
+	}
+
+	&:last-of-type {
+		padding-bottom : 4em;
+	}
+}
+
+.block--dark {
+	background-color : #{$dark-t};
+
+	p, p a, h1, h2, h3 {
+		color : white;
+	}
+}
+
+.block--blue {
+	background-color : #{$blue};
+
+	p, p a, h1, h2, h3 {
+		color : white;
+	}
+}
+
+.block__noMargins {
+	margin : 0em;
+	padding : 1.5em 1em;
+}
+
+.display-block {
+	display : block;
+}
+
+.header {
+	position : absolute;
+	width : 100%;
+	z-index : 30;
+
+	@media (min-width: 450px) {
+		background-color: rgba(255,255,255,0.7);
+		width : 100%;
+		position : fixed;
+		top : 0px;
+		left : 0px;
+	}
+}
+
+.bar {
+	&>div {
+		margin : 0em 0.5em;
+		padding : 0.5em 0em;
+
+		@media (min-width: 450px) {
+			border-bottom : 1px solid #F3F3F3;
+		}
+
+	}
+}
+
+//icon blocks
+.flow {
+	margin : 0 auto;
+	margin-bottom : 2.0em;
+	display : inline-block;
+}
+
+.flow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col {
+	display : inline-block;
+	margin : 10px 15px;
+	@media (min-width: 450px) {
+		float : left;
+	}
+}
+
+.flow-block {
+	padding : 0.3em;
+
+	span {
+		margin-top : 0.8em;
+	}
+}
+
+.arrow {
+	display : none;
+	@media (min-width: 680px) {
+		display : block;
+		position : relative;
+		top : 1em;
+	}
+}
+
+.sub-footer {
+	padding-top : 3em;
+}
+
+//widths
+.margin-center {
+	margin : 0 auto;
+}
+
+.w80 {
+	width : 80%;
+}
