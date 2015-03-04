@@ -36,19 +36,29 @@
 	<nav class="header bar" data="standard-sticky-header">
 		<div>
 			<ul class="inline-list text--right">
+				<!--
 				<li>
-					<a href="https://github.com/Tom-Millard" class="btn btn--roller" target="_blank">
+					<a href="https://github.com/Tom-Millard/tom-millard.com" class="btn btn--roller" target="_blank">
 						<div class="roller">
 						  <i class="fa fa-lg fa-github rollItem"></i>
 						  <i class="fa fa-lg fa-github rollItem"></i>
 						</div>
 					</a>
 				</li>
+				-->
 				<li>
 					<a href="https://twitter.com/millard_" class="btn btn--roller" target="_blank">
 						<div class="roller">
 						  <i class="fa fa-lg fa-twitter rollItem"></i>
 						  <i class="fa fa-lg fa-twitter rollItem"></i>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="http://blog.tom-millard.com" class="btn btn--roller">
+						<div class="roller">
+						  <span class="rollItem text">Blog</span>
+						  <span class="rollItem text">Blog</span>
 						</div>
 					</a>
 				</li>
@@ -89,7 +99,7 @@
 		<div class="container">
 			<h1>.What-I-do</h1>
 			<p>
-				I build websites with a strong emphasis on accessibility. I produce light-weight solutions enabling your client to access information fast, through the delights of responsive design.
+				I build websites with a strong emphasis on <strong>usability</strong>. I produce light-weight solutions enabling your client to access information fast, through the delights of responsive design.
 			</p>
 			<p>
 				For a detailed list of skills and tech, please visit my <a href="http://cv.tom-millard.com" title="CV" target="_blank">CV</a>.
@@ -169,13 +179,15 @@
 				<?php endforeach; ?>
 			</ul>
 			<div class="container">
-				<h2 class="strikeThrough w80 margin-center display--block">
-						<span class="fa-stack">
-						  <i class="fa fa-circle fa-stack-2x dark--bg"></i>
-						  <i class="fa fa-twitter fa-stack-1x dark"></i>
-						</span>
-					<hr style="top : 30%;" />
-				</h2>
+				<a href="https://twitter.com/millard_" target="_blank">
+					<h2 class="strikeThrough w80 margin-center display--block">
+							<span class="fa-stack">
+							  <i class="fa fa-circle fa-stack-2x dark--bg"></i>
+							  <i class="fa fa-twitter fa-stack-1x dark"></i>
+							</span>
+						<hr style="top : 30%;" />
+					</h2>
+				</a>
 				<p>
 					&#8220;<?php echo (string) json_decode( file_get_contents("http://feed.tom-millard.com/twitter.php") )[0]->t; ?>&#8221;
 				</p>
