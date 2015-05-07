@@ -36,7 +36,6 @@
 	<nav class="header bar" data="standard-sticky-header">
 		<div>
 			<ul class="inline-list text--right">
-				<!--
 				<li>
 					<a href="https://github.com/Tom-Millard/tom-millard.com" class="btn btn--roller" target="_blank">
 						<div class="roller">
@@ -45,7 +44,6 @@
 						</div>
 					</a>
 				</li>
-				-->
 				<li>
 					<a href="https://twitter.com/millard_" class="btn btn--roller" target="_blank">
 						<div class="roller">
