@@ -1,3 +1,4 @@
+<?php require "../includes/helpers.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +86,7 @@
 					</a>
 				</div>
 				<div class="row__col row__col50 me-block">
-					<img src="/images/me.png" alt="Thats me By Andrew Foster" class="respond-image" id="js-coffee-counter__trigger">
+					<img src="<?php echo getBase64Image("../app/images/me.png"); ?>" alt="Thats me By Andrew Foster" class="respond-image" id="js-coffee-counter__trigger">
 					<div class="coffee-consumed" id="js-coffee-counter" style="opacity : 0;">
 						<p>
 							<span class="coffee-consumed__counter js-coffee-counter" id="js-coffee-counter__value">0</span> Coffee's Drunk
