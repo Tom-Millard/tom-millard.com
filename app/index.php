@@ -1,6 +1,3 @@
-<!--
-	Looks like you found the code for this site, amazing. Its a bit of a tip in here, hopefully will clean it up soon :(
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
