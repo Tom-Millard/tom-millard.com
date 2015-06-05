@@ -180,3 +180,25 @@
 .w80 {
 	width : 80%;
 }
+
+//coffee
+.coffee-consumed {
+	opacity : 0;
+	display : none;
+
+	@media (min-width : 1170px){
+		display : block;
+		opacity : 0;
+	}
+
+	background-color : #F3F3F3;
+	padding : 0.5em;
+	position: absolute;
+	left: 100%;
+	top: 16%;
+
+	p {
+		white-space: nowrap;
+	}
+
+}
