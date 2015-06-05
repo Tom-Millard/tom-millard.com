@@ -35,8 +35,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
   gulp.src(['./scripts/classes/*.js', './scripts/main.js'])
       .pipe(concat('main.js'))
-      //.pipe(stripDebug())
-      //.pipe(uglify())
+      .pipe(stripDebug())
+      .pipe(uglify())
       .pipe(gulp.dest('./app/scripts/'));
 });
 
