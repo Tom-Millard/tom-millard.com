@@ -9,7 +9,4 @@ detection();
 e = new emailInjection();
 e.inject("js-email-address", ["mailTo:", "t.0m", "@", "icloud", ".", "com"]);
 
-ss = new smoothScroll();
-ss.init();
-
 new coffeeCounter();

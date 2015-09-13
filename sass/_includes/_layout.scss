@@ -130,44 +130,6 @@
 	}
 }
 
-//icon blocks
-.flow {
-	margin : 0 auto;
-	margin-bottom : 2.0em;
-	display : inline-block;
-}
-
-.flow:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.col {
-	display : inline-block;
-	margin : 10px 15px;
-	@media (min-width: 450px) {
-		float : left;
-	}
-}
-
-.flow-block {
-	padding : 0.3em;
-
-	span {
-		margin-top : 0.8em;
-	}
-}
-
-.arrow {
-	display : none;
-	@media (min-width: 680px) {
-		display : block;
-		position : relative;
-		top : 1em;
-	}
-}
-
 .sub-footer {
 	padding-top : 3em;
 }
@@ -201,4 +163,19 @@
 		white-space: nowrap;
 	}
 
+}
+
+//shapes
+shape-circle {
+    display: block;
+    height: 60px;
+    background-color: white;
+    width: 60px;
+    border-radius: 50%;
+
+    i {
+    	color : $dark-t;
+    	position: relative;		
+    	top: 10px;
+    }
 }

@@ -18,21 +18,29 @@ $btnRoller-default-height : 41px;
   position : relative;
   vertical-align: bottom;
 
-  .rollItem {
-    display : block;
-    padding : 0.5em;
-
-    &.text {
-      line-height: 1.3em;
-    }
-
-  }
-
-  .roller {
+  &__container {
     @include transition(bottom, 0.3s);
     position : relative;
-    bottom : 108%; //not sure why this is 108
+    bottom : 100%;
     left : 0px;
+  }
+
+  &__item {
+    display : block;
+    padding : 7px 0.2em;
+    height : #{$btnRoller-default-height};
+    font-size: 1.5em;
+
+    &.text {
+      font-size : 1.2em;
+      padding-top : 10px;
+    }
+  }
+
+  &:hover {
+    .btn--roller__container {
+      bottom : 0%;
+    }
   }
 
 }

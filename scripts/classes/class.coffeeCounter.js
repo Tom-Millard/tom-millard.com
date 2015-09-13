@@ -5,7 +5,7 @@ function coffeeCounter(){
 		trigger 	: document.getElementById("js-coffee-counter__trigger")
 	}
 	, 	_coffee = 0
-	,	_coffeeTotal = 28
+	,	_coffeeTotal = (daysBetween() * 3)
 	,	_delay = 50
 	, 	_fired = 0
 	;
@@ -46,6 +46,14 @@ function coffeeCounter(){
 		}, speed);
 
 		return true;
+	}
+
+	function daysBetween(){
+		var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+		var firstDate = new Date(2015,05,12);
+		var secondDate = new Date();
+
+		return diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
 	}
 
 	init();
