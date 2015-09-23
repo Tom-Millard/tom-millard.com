@@ -32,6 +32,7 @@
 <body>
 	<!-- Standard HTML5 Website -->
 	<nav class="header bar" data="standard-sticky-header">
+		<img src="<?php echo getBase64Image("../app/images/logo.png"); ?>" alt="Tom Millard" style='position: absolute;left: 5px;top: 5px;height : 45px;'>
 		<div>
 			<ul class="inline-list text--right">
 				<li>
@@ -75,22 +76,18 @@
 	</nav>
 	<section class="full" data="standard-100%-silly-intro-page">
 		<div class="cover"></div>
-		<div class="container">
-			<div class="row">
-				<div class="row__col row__col50 container--intro">
-					<h1 class="h1--intro">
-						EAT<br />SLEEP<br />CODE<br />REPEAT
-					</h1>
-					<span class="strap">I am <strong class="red">Tom</strong>.<br /> I build websites.</span>
+		<div class="container--small">
+			<div class="container--intro">
+				<div class="coffee-consumed" id="js-coffee-counter" style="opacity : 0;">
+					<p>
+						<span class="coffee-consumed__counter js-coffee-counter" id="js-coffee-counter__value">0</span> Coffee's Drunk
+					</p>
 				</div>
-				<div class="row__col row__col50 me-block">
-					<img src="<?php echo getBase64Image("../app/images/me.png"); ?>" alt="Thats me By Andrew Foster" class="respond-image" id="js-coffee-counter__trigger">
-					<div class="coffee-consumed" id="js-coffee-counter" style="opacity : 0;">
-						<p>
-							<span class="coffee-consumed__counter js-coffee-counter" id="js-coffee-counter__value">0</span> Coffee's Drunk
-						</p>
-					</div>
-				</div>
+				<img src="<?php echo getBase64Image("../app/images/me.png"); ?>" alt="Thats me By Andrew Foster" class="respond-image main-image" style='float : right;margin-left:15px;' id="js-coffee-counter__trigger">				
+				<h1 class="h1--intro">
+					EAT<br />SLEEP<br />CODE<br />REPEAT
+				</h1>
+				<span class="strap">I am <strong class="red">Tom</strong>.<br /> I build websites.</span>
 			</div>
 		</div>
 	</section>
@@ -104,7 +101,7 @@
 				<?php foreach(json_decode( file_get_contents("http://feed.tom-millard.com/blog.php") ) as $entry ) : ?>
 					<li>
 						<a href="<?php echo $entry->l ?>" title="<?php echo $entry->t ?>" target="_blank">
-							<?php echo $entry->t ?></i>
+							<?php echo $entry->t ?> <i class='icon-link-ext'></i>
 						</a>
 					</li>
 				<?php endforeach; ?>

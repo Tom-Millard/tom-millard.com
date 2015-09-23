@@ -105,6 +105,12 @@ table {
 }
 
 /* '¯áü' */
+/* line 59, ../../sass/_includes/_icons.scss */
+.icon-link-ext:before {
+  content: '\e802';
+}
+
+/* '¯áé' */
 /* line 1, ../../sass/_includes/_type.scss */
 h1, h2, h3, p, .strap, .btn, .flow-block span, .btn-animate {
   font-size: 14px;
@@ -353,7 +359,7 @@ body {
 }
 
 /* line 1, ../../sass/_includes/_layout.scss */
-.container {
+.container, .container--small {
   position: relative;
   z-index: 20;
   width: auto;
@@ -362,44 +368,60 @@ body {
 }
 @media (min-width: 750px) {
   /* line 1, ../../sass/_includes/_layout.scss */
-  .container {
+  .container, .container--small {
     width: 750px;
   }
 }
 
-/* line 14, ../../sass/_includes/_layout.scss */
+@media (min-width: 550px) {
+  /* line 14, ../../sass/_includes/_layout.scss */
+  .container--small {
+    width: 550px;
+  }
+}
+
+/* line 21, ../../sass/_includes/_layout.scss */
 .container--intro {
   text-align: center;
 }
 @media (min-width: 600px) {
-  /* line 14, ../../sass/_includes/_layout.scss */
+  /* line 21, ../../sass/_includes/_layout.scss */
   .container--intro {
     text-align: right;
   }
 }
 
-/* line 23, ../../sass/_includes/_layout.scss */
+/* line 30, ../../sass/_includes/_layout.scss */
 .cover {
   position: absolute;
   top: 0px;
   bottom: 0px;
   width: 100%;
+  left: 0px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 @media (min-width: 600px) {
-  /* line 23, ../../sass/_includes/_layout.scss */
+  /* line 30, ../../sass/_includes/_layout.scss */
   .cover {
     display: none;
   }
 }
 
-/* line 35, ../../sass/_includes/_layout.scss */
+/* line 43, ../../sass/_includes/_layout.scss */
+.main-image {
+  display: none;
+}
+@media (min-width: 600px) {
+  /* line 43, ../../sass/_includes/_layout.scss */
+  .main-image {
+    display: inline;
+  }
+}
+
+/* line 50, ../../sass/_includes/_layout.scss */
 .full {
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
   justify-content: center;
   position: relative;
   background-image: url("/images/me--head.png");
@@ -408,30 +430,19 @@ body {
   background-repeat: no-repeat;
 }
 @media (min-width: 600px) {
-  /* line 35, ../../sass/_includes/_layout.scss */
+  /* line 50, ../../sass/_includes/_layout.scss */
   .full {
     background-image: none;
   }
 }
 @media (min-width: 750px) {
-  /* line 35, ../../sass/_includes/_layout.scss */
+  /* line 50, ../../sass/_includes/_layout.scss */
   .full {
     margin: 0em;
   }
 }
-/* line 57, ../../sass/_includes/_layout.scss */
-.full .container {
-  padding: 0 1em;
-}
-@media (min-width: 600px) {
-  /* line 57, ../../sass/_includes/_layout.scss */
-  .full .container {
-    padding: 0px;
-    background: none;
-  }
-}
 
-/* line 66, ../../sass/_includes/_layout.scss */
+/* line 72, ../../sass/_includes/_layout.scss */
 .block {
   padding: 1.5em 1em;
   background-size: cover;
@@ -439,53 +450,53 @@ body {
   background-repeat: no-repeat;
 }
 @media (min-width: 750px) {
-  /* line 66, ../../sass/_includes/_layout.scss */
+  /* line 72, ../../sass/_includes/_layout.scss */
   .block {
     padding: 0em 0em 4em;
   }
 }
-/* line 77, ../../sass/_includes/_layout.scss */
+/* line 83, ../../sass/_includes/_layout.scss */
 .block:last-of-type {
   padding-bottom: 4em;
 }
 
-/* line 82, ../../sass/_includes/_layout.scss */
+/* line 88, ../../sass/_includes/_layout.scss */
 .block--dark {
   background-color: #51565a;
 }
-/* line 85, ../../sass/_includes/_layout.scss */
+/* line 91, ../../sass/_includes/_layout.scss */
 .block--dark p, .block--dark p a, .block--dark h1, .block--dark h2, .block--dark h3 {
   color: white;
 }
 
-/* line 90, ../../sass/_includes/_layout.scss */
+/* line 96, ../../sass/_includes/_layout.scss */
 .block--blue {
   background-color: #51697c;
 }
-/* line 93, ../../sass/_includes/_layout.scss */
+/* line 99, ../../sass/_includes/_layout.scss */
 .block--blue p, .block--blue p a, .block--blue h1, .block--blue h2, .block--blue h3 {
   color: white;
 }
 
-/* line 98, ../../sass/_includes/_layout.scss */
+/* line 104, ../../sass/_includes/_layout.scss */
 .block__noMargins {
   margin: 0em;
   padding: 1.5em 1em;
 }
 
-/* line 103, ../../sass/_includes/_layout.scss */
+/* line 109, ../../sass/_includes/_layout.scss */
 .display-block {
   display: block;
 }
 
-/* line 107, ../../sass/_includes/_layout.scss */
+/* line 113, ../../sass/_includes/_layout.scss */
 .header {
   position: absolute;
   width: 100%;
   z-index: 30;
 }
 @media (min-width: 450px) {
-  /* line 107, ../../sass/_includes/_layout.scss */
+  /* line 113, ../../sass/_includes/_layout.scss */
   .header {
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
@@ -495,34 +506,34 @@ body {
   }
 }
 
-/* line 122, ../../sass/_includes/_layout.scss */
+/* line 128, ../../sass/_includes/_layout.scss */
 .bar > div {
   margin: 0em 0.5em;
   padding: 0.5em 0em;
 }
 @media (min-width: 450px) {
-  /* line 122, ../../sass/_includes/_layout.scss */
+  /* line 128, ../../sass/_includes/_layout.scss */
   .bar > div {
     border-bottom: 1px solid #F3F3F3;
   }
 }
 
-/* line 133, ../../sass/_includes/_layout.scss */
+/* line 139, ../../sass/_includes/_layout.scss */
 .sub-footer {
   padding-top: 3em;
 }
 
-/* line 138, ../../sass/_includes/_layout.scss */
+/* line 144, ../../sass/_includes/_layout.scss */
 .margin-center {
   margin: 0 auto;
 }
 
-/* line 142, ../../sass/_includes/_layout.scss */
+/* line 148, ../../sass/_includes/_layout.scss */
 .w80 {
   width: 80%;
 }
 
-/* line 147, ../../sass/_includes/_layout.scss */
+/* line 153, ../../sass/_includes/_layout.scss */
 .coffee-consumed {
   opacity: 0;
   display: none;
@@ -533,18 +544,18 @@ body {
   top: 16%;
 }
 @media (min-width: 1170px) {
-  /* line 147, ../../sass/_includes/_layout.scss */
+  /* line 153, ../../sass/_includes/_layout.scss */
   .coffee-consumed {
     display: block;
     opacity: 0;
   }
 }
-/* line 162, ../../sass/_includes/_layout.scss */
+/* line 168, ../../sass/_includes/_layout.scss */
 .coffee-consumed p {
   white-space: nowrap;
 }
 
-/* line 169, ../../sass/_includes/_layout.scss */
+/* line 175, ../../sass/_includes/_layout.scss */
 shape-circle {
   display: block;
   height: 60px;
@@ -552,7 +563,7 @@ shape-circle {
   width: 60px;
   border-radius: 50%;
 }
-/* line 176, ../../sass/_includes/_layout.scss */
+/* line 182, ../../sass/_includes/_layout.scss */
 shape-circle i {
   color: #51565a;
   position: relative;
