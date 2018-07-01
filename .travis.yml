@@ -1,0 +1,7 @@
+language: node_js
+dist: trusty
+install:
+    - npm i
+script:
+    - npm run lint-md
+    - npm run lint-style
