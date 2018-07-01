@@ -1,9 +1,0 @@
-/* TEAM */
-Your title: Tom Millard
-Site: http://www.tom-millard.com
-Twitter: @millard_
-Location: Sandy, BedfordShire, United Kingdom
-
-/*Site*/
-Last update: 2014/10/06
-Standards: HTML5, CSS3

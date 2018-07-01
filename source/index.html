@@ -1,0 +1,43 @@
+---
+layout: default
+title: Home
+generator: pagination
+pagination:
+    max_per_page: 10
+use:
+    - posts
+---
+<div class="post-role">
+    {% for post in page.pagination.items %}
+        <article>
+            <div class="subhead">
+                <time datetime="{{ post.date|date('c') }}" pubdate><strong>{{ post.date|date("F, jS Y") }}</strong></time>
+                <span><i>by</i></span>
+                <strong>Tom Millard</strong>
+            </div>
+            <header>
+                <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+                <p class="tags">
+                    {% for tag in post.meta.tags %}
+                    <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %} - {% endif %} {% endfor %}
+                </p>
+            <div>
+                {{ post.blocks.content|raw }}
+            </div>
+        </article>
+    {% endfor %}
+    {% if page.pagination.previous_page or page.pagination.next_page %}
+    <nav>
+        <p style="text-align : center;">
+            {% if page.pagination.next_page %}
+                <a href="{{ page.pagination.next_page.url }}" title="Older Posts">old posts</a>
+            {% endif %}
+            -
+            {% if page.pagination.previous_page %}
+                <a href="{{ page.pagination.previous_page.url }}" title="Newer Posts">new posts</a>
+            {% endif %}
+        </p>
+    </nav>
+    {% endif %}
+</div>

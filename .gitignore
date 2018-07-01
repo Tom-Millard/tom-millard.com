@@ -1,2 +1,11 @@
+/.sculpin/
+/app/cache/*
+/app/config/sculpin_kernel_*.yml
+/app/config/sculpin_site_*.yml
+/app/logs/*
+/output_*/
+/source/components/
+s3.conf
+/vendor/
+publish.sh
 node_modules
-.sass-cache

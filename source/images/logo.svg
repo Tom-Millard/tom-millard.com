@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="333px" height="333px" viewBox="0 0 333 333" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#F857A6" offset="0%"></stop>
+            <stop stop-color="#FF5858" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(20.000000, 20.000000)" fill-rule="nonzero">
+            <g id="Group">
+                <rect id="Rectangle-path" stroke="url(#linearGradient-1)" stroke-width="40" x="0" y="0" width="293" height="293"></rect>
+                <polygon id="Shape" fill="url(#linearGradient-1)" points="64 64 228 64 228 110.857143 169.428571 110.857143 169.428571 228 122.571429 228 122.571429 110.857143 64 110.857143"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

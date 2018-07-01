@@ -1,15 +1,25 @@
-#Tom-Millard.com
+Tom-Millard.com
+=====================
 
-In short this is the repo for [tom-millard.com](http://tom-millard.com).
+A blog based on Sculpin blog skeleton.
 
-#How it works
-It's a pretty simple php site running off of two feeds - Twitter and blog.tom-millard.com, both served up as json.
+Powered by [Sculpin](http://sculpin.io). =)
 
-Sass is compiled using gulp, and the css file is served up using php - file_get_contents.
+Linting
+--------
 
-Since the site is so small placing all the css in the header will stop any render blocking. [Font Awesome](http://fortawesome.github.io/Font-Awesome/) is used for icons, however the css has all icons from this library which is not ideal.
+You can lint both md and css files with the following commands:
 
-The javascript is built on top of vanilla.js, for simple scrolling.
+```
+npm run lint-md;
+npm run lint-style;
+```
 
-#Images
-Imagery is provided by [Andrew Foster](http://www.andrewfosterdesign.com/).
+Building
+--------
+
+Running the follwing command will build the site and place the out put in `output_dev`. 
+
+`php vendor/bin/sculpin generate --watch --server`
+
+The webserver will be [http://localhost:8000](http://localhost:8000).

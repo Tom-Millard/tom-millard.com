@@ -1,0 +1,52 @@
+body {
+  font-size: 16pt;
+  font-family: 'Source Sans Pro', sans-serif;
+  color : #191716;
+  background-color: #F7F7F2;
+  line-height: 1.3;
+  margin: 20px;
+}
+
+a {
+    text-decoration: underline;
+    -webkit-background-clip: text;
+    background-image: -webkit-gradient(125deg, #f857a6, #ff5858);
+    background-image: linear-gradient(125deg, #f857a6, #ff5858);
+    color:transparent;
+    background-clip: text;
+}
+
+h1 a, h1 {
+    font-size: 3.4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
+    text-decoration: none;
+    color : #191716;
+    background-image: none;
+}
+
+.subhead {
+    display : block;
+    text-align: center;
+}
+
+p {
+    letter-spacing: 0.5px;
+}
+
+.container__content {
+    max-width : 750px;
+    margin : 0px auto;
+}
+
+.post-role article {
+    margin-bottom : 75px;
+}
+
+.tags {
+    text-align: center;
+    margin-bottom : 45px;
+}

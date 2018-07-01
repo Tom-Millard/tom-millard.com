@@ -1,0 +1,5 @@
+sculpin_content_types:
+    posts:
+        permalink: :year/:month/:day/:filename/
+sculpin:
+    ignore: ["**/.DS_Store"]
