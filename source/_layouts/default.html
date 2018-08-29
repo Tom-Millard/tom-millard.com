@@ -13,13 +13,9 @@
         <meta property="og:image" content="{{ site.url }}{{ page.ogImage ? page.ogImage : '/images/splash.png' }}">
         <meta property="article:author" content="Tom Millard">
 
-        {% block head_meta %}
-            <meta name="robots" content="noindex, follow">
-        {% endblock %}
-
         <link href="/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="/css/prism.css" rel="stylesheet" type="text/css" />
-        <script src="/scripts/prism.js"></script>
+        <link href="/css/prism.css" rel="stylesheet" type="text/css" defer/>
+        <script src="/scripts/prism.js" defer></script>
 
         <link rel="apple-touch-startup-image" href="{{ site.url }}/images/apple-touch-icon-2048x2048.png">
         <meta name="mobile-web-app-capable" content="yes">
