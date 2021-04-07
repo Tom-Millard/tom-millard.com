@@ -1,5 +1,5 @@
 ---
-title: Install PHP 7 on Mac with homebrew
+title: Install PHP 7 on Mac with homebrew (updated)
 tags:
 -   php
 -   php7
@@ -8,9 +8,11 @@ tags:
 excerpt: Working on a mac and coding with PHP Its probably time to install PHP It's like the second coming of christ in PHP so why not join in Lets start by updating brew brew update Un-install old version of php
 ---
 
+Edit: Brew recently changed its syntax, in order to install the latest version of php you would need a command like this - `brew install php@7.2 --with-pear`m always read the output :D
+
 Working on a mac and coding with PHP? 
 
-Its probably time to install PHP 7. It's like the second coming of christ in PHP, so why not join in.
+It's probably time to install PHP 7. It's like the second coming of christ in PHP, so why not join in.
 
 Lets start by updating, brew:
 
